@@ -1,12 +1,9 @@
-export default function Menu(){
+export default function Menu({clickAction}){
 
-    const doSomething = () => {
-        console.log("play!");
-    }
 
     return <>
         <h1> Welcome to BlackJack!</h1>
 
-        <button onClick={doSomething}> Play </button>
+        <button onClick={clickAction}> Play </button>
     </>
 }
